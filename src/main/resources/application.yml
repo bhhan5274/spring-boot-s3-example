@@ -1,0 +1,24 @@
+cloud:
+  aws:
+    stack:
+      auto: false
+spring:
+  jpa:
+    database: h2
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    properties:
+      hibernate.format_sql: true
+  h2:
+    console:
+      enabled: true
+      settings:
+        web-allow-others: true
+
+logging:
+  level:
+    root: info
+    org:
+      hibernate:
+        type: trace

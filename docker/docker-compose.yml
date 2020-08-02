@@ -1,0 +1,13 @@
+version: '2'
+services:
+  s3example:
+    image: bhhan87/springboot-s3-example:v1.0
+    ports:
+      - 9000:9000
+    environment:
+      PORT: 9000
+      CLOUD_FRONT: https://d2619qlr2v22gb.cloudfront.net
+      ACCESS_KEY: AKIARNIYFTLTH2UULJAQ
+      SECRET_KEY: p9YPuDcm6vFO/DHKQ57+55G9v16Ji6rEFyTmQHz/
+      BUCKET: bhhan-s3
+      REGION: ap-northeast-2
